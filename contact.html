@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Pre Orders | North Star Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="assets/bakery-logo_c.png" alt="North Star Bakery logo, a round loaf of bread with a wheat stalk baked into the crust" width="300" height="256">
+            <div class="brand-text">
+                <p>North Star Bakery</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact and Pre Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact and Pre Orders</h1>
+        <p>
+            Use the form below to reserve items for pickup or to ask us a question. We answer
+            requests in the order they come in, usually within one business day. For a custom cake,
+            please give us at least three days of notice, and a week for large sheet cakes.
+        </p>
+
+        <section>
+            <h2>Pre Order and Inquiry Request</h2>
+            <p>
+                There is no payment on this form. We confirm your order by email first, and you pay
+                at the counter when you pick it up. Fields marked as required must be filled in
+                before the form will send.
+            </p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+
+                    <p>
+                        <label for="full-name">Full name (required)</label><br>
+                        <input type="text" id="full-name" name="full-name" minlength="2" maxlength="60" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email address for your confirmation (required)</label><br>
+                        <input type="email" id="email" name="email" maxlength="80" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone number, formatted as 304-555-0188</label><br>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What Are You Contacting Us About?</legend>
+
+                    <p class="choice">
+                        <input type="radio" id="request-preorder" name="request-type" value="pre-order" checked>
+                        <label for="request-preorder">Pre order for pickup</label>
+                    </p>
+
+                    <p class="choice">
+                        <input type="radio" id="request-cake" name="request-type" value="custom-cake">
+                        <label for="request-cake">Custom cake request</label>
+                    </p>
+
+                    <p class="choice">
+                        <input type="radio" id="request-question" name="request-type" value="general-question">
+                        <label for="request-question">General question</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pickup Details</legend>
+
+                    <p>
+                        <label for="pickup-date">Pickup date (required)</label><br>
+                        <input type="date" id="pickup-date" name="pickup-date" min="2026-09-10" max="2027-06-30" required>
+                    </p>
+
+                    <p>
+                        <label for="pickup-time">Preferred pickup time, between 6:00 a.m. and 6:00 p.m.</label><br>
+                        <input type="time" id="pickup-time" name="pickup-time" min="06:00" max="18:00">
+                    </p>
+
+                    <p>
+                        <label for="item-details">Item details, including quantities (required)</label><br>
+                        <textarea id="item-details" name="item-details" rows="5" cols="45" minlength="10" maxlength="500" required></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Allergy and Dietary Notes</legend>
+
+                    <p>
+                        <label for="allergy-notes">Tell us about any allergies or dietary needs, if applicable</label><br>
+                        <textarea id="allergy-notes" name="allergy-notes" rows="4" cols="45" maxlength="300"></textarea>
+                    </p>
+
+                    <p>
+                        Our kitchen works with wheat, eggs, dairy, and tree nuts every day, so we
+                        cannot promise an allergen free product. We will tell you honestly what we
+                        can and cannot do for your request.
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Send my request to the bakery</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Find the Bakery</h2>
+            <p>
+                We are on the corner of Mill Street and Fourth, two doors down from the hardware
+                store. There is street parking out front and a ramp at the Fourth Street entrance.
+            </p>
+            <address>
+                North Star Bakery<br>
+                412 Mill Street<br>
+                Riverton, WV 26100<br>
+                Phone: <a href="tel:+13045550188">(304) 555-0188</a><br>
+                Email: <a href="mailto:orders@northstarbakery.example">orders@northstarbakery.example</a>
+            </address>
+        </section>
+
+        <section>
+            <h2>Hours of Operation</h2>
+            <ul>
+                <li>Tuesday through Friday: 6:00 a.m. to 6:00 p.m.</li>
+                <li>Saturday: 6:00 a.m. to 3:00 p.m.</li>
+                <li>Sunday: 7:00 a.m. to 1:00 p.m.</li>
+                <li>Monday: closed</li>
+            </ul>
+            <p>
+                Pickups happen at the front counter during open hours. If you need an early pickup
+                before we open, say so in your item details and we will see what we can arrange.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <h2>Come See Us</h2>
+        <p>
+            412 Mill Street, Riverton, WV 26100 &middot; (304) 555-0188 &middot; Closed Mondays
+        </p>
+        <p>&copy; 2026 North Star Bakery</p>
+    </footer>
+</body>
+</html>
